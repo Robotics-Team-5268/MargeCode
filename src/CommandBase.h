@@ -19,6 +19,7 @@ public:
 	static void init();
 	// Create a single static instance of all of your subsystems
 	static std::unique_ptr<OI> oi;
+	static std::unique_ptr<Drive> drive;
 };
 
 #endif
