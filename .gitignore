@@ -5,3 +5,4 @@
 Debug/*
 build.properties
 build.xml
+/Debug/
