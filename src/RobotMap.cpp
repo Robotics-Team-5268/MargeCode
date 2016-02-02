@@ -41,7 +41,7 @@ void RobotMap::init() {
     driveRobotDrive4.reset(new RobotDrive(driveSpeedController1, driveSpeedController2,
               driveSpeedController3, driveSpeedController4));
     
-    driveRobotDrive4->SetSafetyEnabled(true);
+    driveRobotDrive4->SetSafetyEnabled(false);
         driveRobotDrive4->SetExpiration(0.1);
         driveRobotDrive4->SetSensitivity(0.5);
         driveRobotDrive4->SetMaxOutput(1.0);

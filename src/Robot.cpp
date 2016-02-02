@@ -65,8 +65,8 @@ void Robot::TeleopInit() {
 
 void Robot::TeleopPeriodic() {
 	Scheduler::GetInstance()->Run();
-
 	drive->takeInput();
+	drive->AddSpeedControllers();
 }
 
 void Robot::TestPeriodic() {
