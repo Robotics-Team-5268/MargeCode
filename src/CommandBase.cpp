@@ -3,7 +3,6 @@
 
 // Initialize a single static instance of all of your subsystems to NULL
 std::unique_ptr<OI> CommandBase::oi;
-std::unique_ptr<Drive> CommandBase::drive;
 
 CommandBase::CommandBase(const std::string &name) :
 		Command(name)
@@ -23,5 +22,4 @@ void CommandBase::init()
 	//examplesubsystem.reset(new ExampleSubsystem());
 
 	oi.reset(new OI());
-	drive.reset(new Drive());
 }
