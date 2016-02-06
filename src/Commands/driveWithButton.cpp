@@ -42,7 +42,7 @@ bool driveWithButton::IsFinished() {
 
 // Called once after isFinished returns true
 void driveWithButton::End() {
-Robot::drive->setMotors(1, 1);
+Robot::drive->setMotors(0, 0);
 }
 
 // Called when another command which requires one or more of the same
