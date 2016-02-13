@@ -36,7 +36,7 @@ public:
 	Drive();
 	void safetyOff(){robotDrive4->SetSafetyEnabled(false);}
 	void InitDefaultCommand();
-	void AddSpeedControllers();
+	void AddSmartDashboardItems();
 	AnalogGyro* getGyro();
 	void setMotors(float leftSpeed, float rightSpeed);
 	float returnAngle();
